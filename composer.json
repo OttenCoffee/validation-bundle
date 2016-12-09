@@ -1,0 +1,38 @@
+{
+    "name": "otten/validation-bundle",
+    "description": "Provide additional validator for Symfony.",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "keywords": [
+        "symfony",
+        "bundle",
+        "validation",
+        "recaptcha",
+        "disposable email"
+    ],
+    "authors": [
+        {
+            "name": "Otten Coffee",
+            "homepage": "https://ottencoffee.co.id"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Otten\\Bundle\\ValidationBundle\\": ""
+        },
+        "exclude-from-classmap": [
+            "Tests/"
+        ]
+    },
+    "require": {
+        "symfony/framework-bundle": "^2.7|^3.0",
+        "symfony/form": "^2.7|^3.0",
+        "symfony/validator": "^2.7|^3.0",
+        "google/recaptcha": "^1.1"
+    },
+    "require-dev": {
+        "symfony/yaml": "^2.7|^3.0",
+        "phpunit/phpunit": "^5.0",
+        "doctrine/common": "^2.7"
+    }
+}
