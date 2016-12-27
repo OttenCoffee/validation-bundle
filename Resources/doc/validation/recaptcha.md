@@ -12,6 +12,31 @@ otten_validation:
 ```
 
 ## Usage
+add `HasRecaptcha` trait to entity.
+```php
+// src/AppBundle/Entity/Task.php
+namespace AppBundle\Entity;
+
+use Otten\Bundle\ValidationBundle\Entity\Traits\HasRecaptcha;
+
+class Task
+{
+    use HasRecaptcha;
+
+    protected $task;
+
+    public function getTask()
+    {
+        return $this->task;
+    }
+
+    public function setTask($task)
+    {
+        $this->task = $task;
+    }
+}
+```
+
 When creating a new form class add the following line to create the field:
 
 ```php
